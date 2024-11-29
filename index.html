@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS CRUD IMAGE LOCAL STORAGE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>User Information</h1>
+      <form id="user-form" class="form" method="post">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter name"
+          required
+        />
+
+        <label for="designation">Designation:</label>
+        <input
+          type="text"
+          id="designation"
+          name="designation"
+          placeholder="Enter designation"
+          required
+        />
+
+        <label for="phone">Phone:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Enter phone number"
+          required
+        />
+
+        <label for="photo">Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required />
+
+        <button type="submit" id="btn-edit-submit" class="btn">Submit</button>
+      </form>
+
+      <div id="card-container" class="card-container">
+        <!-- Dummy Card 1 -->
+        
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
